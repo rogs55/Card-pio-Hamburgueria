@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        <img class="h-40 max-w-40 rounded-full shadow-lg hover:scale-110 duration-200 " src="./img/rogs.png" alt="Logo Burguer">
+        <h1 class="text-white text-4xl mt-4 mb-2 font-bold">Rogs Burguer</h1>
+        <span class="text-white font-medium">Rua 12, Chacára 154/1, Vicente Pires </span>
+        
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="text-white font-medium">Sexta á Domingo - 17:00 as 23:00</span>
+        </div>
+    </div>    
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-14">Conheça nosso Cardápio</h2>
+
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-1.png" alt="Double Smash">
+                <div>
+                    <p class="font-bold">Double Smash</p>
+                    <p class="text-sm">Pão brioche selado na manteiga, 2 smashs de angus, 2 fatias de queijo cheddar, alface americana, tomate, cebola roxa e molho especial.</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 34,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Double Smash" data-price="34,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+            <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-2.png" alt="Six Flags">
+                
+                <div>
+                    <p class="font-bold">Cheddar e Bacon</p>
+                    <p class="text-sm">Cheddar e Bacon
+                        Pão brioche tradicional selado na manteiga, maionese especial, o duplo de carne angus 100 g, o triplo de creme de cheddar e o triplo de bacon crispy.</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 40,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Cheddar e Bacon" data-price="40,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-3.png" alt="Six Flags">
+                
+                <div>
+                    <p class="font-bold">Six Flags</p>
+                    <p class="text-sm">Pão brioche tradicional selado na manteiga, maionese especial, blend de 160 g de carne (angus), queijo cheddar, alface americana, cebola roxa, tomate e bacon crispy.</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 28,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Six Flex" data-price="28,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-4.png" alt="American Burger">
+                
+                <div>
+                    <p class="font-bold">Chicken Burger</p>
+                    <p class="text-sm">Pão brioche tradicional selado na manteiga, maionese especial, blend de 160 g de frango, queijo muçarela, alface americana, cebola roxa, tomate e bacon crispy.</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 28,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="American Burger" data-price="28,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-5.png" alt="El Patron">
+                
+                <div>
+                    <p class="font-bold">Cowboy Burger</p>
+                    <p class="text-sm">Pão australiano selado na manteiga, maionese especial, blend 160g de carne (angus), queijo cheddar, cebola caramelizada, picles, molho barbecue da casa e farofa de bacon.
+                    </p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 34,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Cowboy Burger" data-price="34,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-6.png" alt="El Patron">
+                
+                <div>
+                    <p class="font-bold">El Patron</p>
+                    <p class="text-sm">Pão pretzel selado na manteiga, maionese especial, blend de 160 g de carne (angus) defumado na pit smoke, queijo muçarela empanado, tomate confitado no azeite e rúcula.</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 38,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="El Patron" data-price="38,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-7.png" alt="El Patron">
+                
+                <div>
+                    <p class="font-bold">Onion Burger</p>
+                    <p class="text-sm">Pão australiano selado na manteiga, maionese especial, blend de 160 g de carne (angus) defumado na pit smoke, queijo coalho, anel de cebola empanado, molho barbecue da casa.</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 38,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Onion Burger" data-price="38,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/hamb-8.png" alt="El Patron">
+                
+                <div>
+                    <p class="font-bold">Vegetariano</p>
+                    <p class="text-sm">Pão brioche tradicional selado na manteiga, maionese especial, queijo muçarela empanado, tomate confitado no azeite e rúcula.</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 28,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Vegetariano" data-price="28,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mx-auto max-w-7xl my-2">
+            <h2 class="font-bold text-3xl text-center mb-14">Bebidas</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <div class="flex gap-2 w-full">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/refri-1.png" alt="coca lata">
+                
+                <div class="w-full ">
+                    <p class="font-bold">Coca lata</p>                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Coca lata" data-price="6,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="flex gap-2 w-full">
+                <img class="w-28 h-28 rounded-md-md hover:scale-110 hover:-rotate-2 duration-300" src="./img/refri-2.png" alt="guaraná lata">
+                
+                <div class="w-full ">
+                    <p class="font-bold">Guaraná lata</p>                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6,00</p>
+                        <button class="add-to-cart-btn bg-gray-900 px-5 rounded" data-name="Guaraná lata" data-price="6,00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden ">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total <span id="cart-total">0,00</span></p>
+            <p class="font-bold mt-4">Endereço de entrega</p>
+            <input class="w-full border-2 p-1 rounded my-1" type="text" id="address" placeholder="Digite seu endereço completo">
+            
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn" class="bg-red-500 text-white px-2 py-1 rounded">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Ver meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
