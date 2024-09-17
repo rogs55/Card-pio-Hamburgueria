@@ -921,26 +921,6 @@ video {
   width: 100%;
 }
 
-.min-w-\[50\%\] {
-  min-width: 50%;
-}
-
-.min-w-\[5\%\] {
-  min-width: 5%;
-}
-
-.min-w-\[\%\] {
-  min-width: %;
-}
-
-.min-w-\[80\%\] {
-  min-width: 80%;
-}
-
-.min-w-\[59\%\] {
-  min-width: 59%;
-}
-
 .min-w-\[90\%\] {
   min-width: 90%;
 }
@@ -1941,6 +1921,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
